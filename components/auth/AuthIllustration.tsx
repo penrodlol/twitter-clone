@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import Svg from '../ui/Svg';
 
-export class LoginIllustration extends React.Component {
+export class AuthIllustration extends React.Component {
   render() {
     return (
       <div className="relative h-full">

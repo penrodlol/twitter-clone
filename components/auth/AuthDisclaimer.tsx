@@ -1,6 +1,6 @@
 import React from 'react';
 
-export class LoginDisclaimer extends React.Component {
+export class AuthDisclaimer extends React.Component {
   render() {
     return (
       <p className="text-xs text-gray-300 max-w-[400px] mb-6">

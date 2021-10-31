@@ -10,7 +10,10 @@ interface LogoutCardProps {
 export default withRouter(
   class LogoutCard extends React.Component<LogoutCardProps> {
     logout() {
-      this.props.router.push('/login?signIn=false');
+      this.props.router.push({
+        pathname: '/auth',
+        query: { signin: false },
+      });
     }
 
     render() {

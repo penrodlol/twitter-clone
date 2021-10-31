@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
-import LoginCard from '../components/login/LoginCard';
-import { LoginIllustration } from '../components/login/LoginIllustration';
+import AuthCard from '../../components/auth/AuthCard';
+import { AuthIllustration } from '../../components/auth/AuthIllustration';
 
 const Login: NextPage = () => {
   return (
@@ -8,10 +8,10 @@ const Login: NextPage = () => {
       className="grid grid-flow-col h-screen bg-basic-400 gap-10"
       style={{ gridTemplateColumns: '55vw 1fr' }}
     >
-      <LoginIllustration />
+      <AuthIllustration />
       <div className="relative h-full">
         <div className="absolute top-1/4">
-          <LoginCard />
+          <AuthCard />
         </div>
       </div>
     </div>
