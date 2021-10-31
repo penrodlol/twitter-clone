@@ -1,8 +1,20 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import type { AppProps } from 'next/app';
+import Head from 'next/head';
+import '../styles/globals.scss';
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+function TwitterClone({ Component, pageProps }: AppProps) {
+  return (
+    <div>
+      <Head>
+        <title>Twitter Clone</title>
+        <meta name="description" content="Twitter Clone in NextJs" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <main>
+        <Component {...pageProps} />
+      </main>
+    </div>
+  );
 }
 
-export default MyApp
+export default TwitterClone;

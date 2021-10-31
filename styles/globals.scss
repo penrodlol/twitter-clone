@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --basic-100: #5b70835e;
+  --basic-200: #253341;
+  --basic-300: #192734;
+  --basic-400: #15202b;
+  --primary-100: #7856ff;
+  --primary-200: #6c46e6;
+  --link: #1d9bf0;
+}
+
+body {
+  @apply antialiased;
+  @apply bg-basic-300;
+  @apply text-white;
+}
